@@ -1,0 +1,326 @@
+<!doctype html>
+<!--注意：引入thymeleaf的名称空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <title>鑫辉砂浆有限公司</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="鑫辉砂浆有限公司">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <script type="text/javascript" th:src="@{/js/jquery1.42.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.SuperSlide.2.1.1.js}"></script>
+    <script type="text/javascript" th:src="@{/js/index.js}"></script>
+</head>
+<body>
+    <dl class="header">
+        <dt style="overflow:hidden;">
+            <img src="/images/logo.png" height="114" width="322" class="logo"/>
+        </dt>
+<!--        <dd>-->
+<!--            <div class="lxwm">-->
+<!--                <ul>-->
+<!--                    <li>-->
+<!--                        &lt;!&ndash; 在线客服 &ndash;&gt;-->
+<!--                        <a href="http://wpa.qq.com/msgrd?v=3&uin=460937370&site=qq&menu=yes">&nbsp;</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="tel"><span>0377-86668300</span></div>-->
+<!--            <form action="/Home/Product/index.html">-->
+<!--                <div class="search">-->
+<!--                    <input type="text" name="key" id="key" value="" placeholder="请输入商品关键字" />-->
+<!--                    <input type="submit" value="" />-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </dd>-->
+    </dl>
+    <div class="menu">
+        <ul class="nav">
+            <a href="/home">
+                <li id="dangqian">
+                    首页
+                </li>
+            </a>
+            <a href="/about">
+                <li >
+                    公司简介
+                </li>
+            </a>
+            <a href="/product">
+                <li >
+                    产品介绍
+                </li>
+            </a>
+            <a href="/news">
+                <li  >
+                    公司新闻
+                </li>
+            </a>
+            <a href="/qualification">
+                <li  >
+                    公司资质
+                </li>
+            </a>
+            <a href="/contact" >
+                <li >
+                    联系我们
+                </li>
+            </a>
+            <!--
+            <li class="last">&nbsp;
+                <ul class="lang">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">简体中文</a></li>
+                </ul>
+            </li>
+             -->
+        </ul>
+    </div>
+    <!--banner-->
+    <div class="fullSlide">
+        <div class="bd">
+            <ul>
+                <li>
+                    <a href="">
+                        <!-- 主页滚动的图片 -->
+                        <img src="/images/one.png" />
+                    </a>
+                </li>					</ul>
+        </div>
+        <div class="hd"><ul></ul></div>
+    </div>
+
+    <script type="text/javascript">
+        jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
+    </script>
+
+    <!--main-->
+    <div  class="about">
+        <div class="inner">
+            <div class="left">
+                <div class="head">
+                    <h1>关于我们</h1><small>ABOUT</small>
+                </div>
+                <div class="con">
+                    <img class="l_img" src="/images/about.png" />
+                    <p>    郑州鑫辉砂浆有限公司位于河南省郑州市金水区。</p>
+                    <a href="/about">
+                        <div class="more1">
+                            查看详情>>
+                        </div>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="head">
+                    <h1>联系方式</h1><small>CONTACT</small>
+                </div>
+                <div class="con">
+                    <img src="/images/lxwm.png" />
+                    <dl>
+                        <dt>公司名称：</dt><dd>郑州鑫辉砂浆有限公司</dd>
+                        <dt>地址：</dt><dd>河南省郑州市金水区</dd>
+                        <dt>手机：</dt><dd>18888888888</dd>
+                        <dt>微信号：</dt><dd>18888888888</dd>
+                        <dt>电话：</dt><dd>0371-88888888</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div >
+
+<!--    <div  class="news">-->
+<!--        <div class="inner">-->
+<!--            <div class="left">-->
+<!--                <div class="head">-->
+<!--                    <h1>新闻中心</h1><small>（最新）</small>-->
+<!--                </div>-->
+<!--                <div class="con">-->
+<!--                    <div class="news_box">-->
+<!--                        <ul>-->
+<!--                            <li>-->
+<!--                                <a href="/Home/Info/show/id/7.html">总经理荣获砂浆行业杰出贡献个人</a>-->
+<!--                                <span class="time">2016-11-25</span>-->
+<!--                            </li><li>-->
+<!--                            <a href="/Home/Info/show/id/6.html">粘合剂测试报告</a>-->
+<!--                            <span class="time">2016-11-14</span>-->
+<!--                        </li><li>-->
+<!--                            <a href="/Home/Info/show/id/5.html">压浆料测试报告</a>-->
+<!--                            <span class="time">2016-11-14</span>-->
+<!--                        </li><li>-->
+<!--                            <a href="/Home/Info/show/id/4.html">营业执照</a>-->
+<!--                            <span class="time">2016-11-14</span>-->
+<!--                        </li><li>-->
+<!--                            <a href="/Home/Info/show/id/3.html">备案证书</a>-->
+<!--                            <span class="time">2016-11-14</span>-->
+<!--                        </li><li>-->
+<!--                            <a href="/Home/Info/show/id/2.html">合格证书</a>-->
+<!--                            <span class="time">2016-10-31</span>-->
+<!--                        </li><li>-->
+<!--                            <a href="/Home/Info/show/id/1.html">备案证书（副本）</a>-->
+<!--                            <span class="time">2016-10-31</span>-->
+<!--                        </li>                  </ul>-->
+<!--                    </div>-->
+<!--                    <div class="qh">-->
+<!--                        <span class="prev">&nbsp;</span>-->
+<!--                        <span class="next">&nbsp;</span>-->
+<!--                    </div>-->
+<!--                    <div class="clear"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="right">-->
+<!--                <div class="head">-->
+<!--                    <h1>快捷入口</h1><small>&nbsp;</small>-->
+<!--                </div>-->
+<!--                <div class="con">-->
+<!--                    <div class="tab">-->
+<!--                        <ul>-->
+<!--                            <li class="cur">首页</li>-->
+<!--                            <li>简介</li>-->
+<!--                            <li>产品</li>-->
+<!--                        </ul>-->
+<!--                        <span class="toright"></span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div >-->
+
+<!--    <div class="yw">-->
+<!--        <div class="inner">-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="/Home/Product/show/id/1.html">-->
+<!--                        <img src="/images/products/149783707368131.png" />-->
+<!--                        <div class="name">预拌干混砌筑砂浆</div>-->
+<!--                    </a>-->
+<!--                </li><li>-->
+<!--                <a href="/Home/Product/show/id/2.html">-->
+<!--                    <img src="/images/products/149783825043565.png" />-->
+<!--                    <div class="name">预拌干混抹灰砂浆</div>-->
+<!--                </a>-->
+<!--            </li><li>-->
+<!--                <a href="/Home/Product/show/id/3.html">-->
+<!--                    <img src="/images/products/149783826427471.png" />-->
+<!--                    <div class="name">预拌干混地面砂浆</div>-->
+<!--                </a>-->
+<!--            </li><li>-->
+<!--                <a href="/Home/Product/show/id/4.html">-->
+<!--                    <img src="/images/products/149783827516589.png" />-->
+<!--                    <div class="name">干混普通防水砂浆</div>-->
+<!--                </a>-->
+<!--            </li><li>-->
+<!--                <a href="/Home/Product/show/id/5.html">-->
+<!--                    <img src="/images/products/149783828840753.png" />-->
+<!--                    <div class="name">彩色陶瓷墙地砖填缝剂</div>-->
+<!--                </a>-->
+<!--            </li><li>-->
+<!--                <a href="/Home/Product/show/id/6.html">-->
+<!--                    <img src="/images/products/149783830322220.png" />-->
+<!--                    <div class="name">灌浆料</div>-->
+<!--                </a>-->
+<!--            </li>        </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="bottom">
+        <div class="inner">
+            <ul class="ul1">
+                <li class="li1">
+                    <a href="/product">公司产品</a>
+                    <ul class="ul1">
+                        <!--  <li><a href="/Home/Product/index.html" >首页</a></li>-->
+                        <div class="clear"></div>
+                    </ul>
+                </li>
+                <li class="li1">
+                    <a href="/qualification">公司资质</a>
+                    <ul class="ul1">
+                        <!--  <li><a href="/Home/Infos/index.html" >首页</a></li> -->
+                        <div class="clear"></div>
+                    </ul>
+                </li>
+                <li class="li1">
+                    <a href="/contact" >联系我们</a>
+                    <ul class="ul1">
+                        <!-- <li><a href="/Home/Index/show.html" >首页</a></li>
+                        <li><a href="/Home/Index/about.html">公司简介 </a></li>-->
+                        <div class="clear"></div>
+                    </ul>
+                </li>
+<!--                <li class="li1">人才招聘-->
+<!--                    <ul class="ul1">-->
+<!--                      <li><a href="#" >首页</a></li>-->
+<!--                      <li><a href="#">关于我们</a></li>-->
+<!--                      <li><a href="#">产品中心</a></li>-->
+<!--                      <li><a href="#">技术与支持</a></li>-->
+<!--                      <li><a href="#">联系我们</a></li>-->
+<!--                      <div class="clear"></div>-->
+<!--                  </ul>-->
+<!--                </li>-->
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="ba">
+            <div class="inner">
+                <span class="left">版权所有</span>
+                <span class="right"><a href="/contact">联系我们</a></span>
+            </div>
+        </div>
+    </div>
+<!--    <div class="main-im">-->
+<!--        <div id="open_im" class="open-im">&nbsp;</div>-->
+<!--        <div class="im_main" id="im_main">-->
+<!--            <div id="close_im" class="close-im"><a href="javascript:void(0);" title="点击关闭">&nbsp;</a></div>-->
+<!--            <a href="http://wpa.qq.com/msgrd?v=3&uin=460937370&site=qq&menu=yes" target="_blank" class="im-qq qq-a" title="在线QQ客服">-->
+<!--                <div class="qq-container"></div>-->
+<!--                <div class="qq-hover-c">-->
+<!--                    <img class="img-qq" src="http://demo.lanrenzhijia.com/2015/service0119/images/qq.png">-->
+<!--                </div>-->
+<!--                <span>QQ在线咨询</span>-->
+<!--            </a>-->
+<!--            <div class="im-tel">-->
+<!--                <div>咨询热线</div>-->
+<!--                <div class="tel-num">0377-88888888</div>-->
+<!--            </div>-->
+<!--            <div class="im-footer" style="position:relative">-->
+<!--                <div class="weixing-container">-->
+<!--                    <div class="weixing-show">-->
+<!--                        <div class="weixing-txt">微信扫一扫<br>打开懒人之家</div>-->
+<!--                        <img class="weixing-ma" src="http://demo.lanrenzhijia.com/2015/service0119/images/weixing-ma.jpg">-->
+<!--                        <div class="weixing-sanjiao"></div>-->
+<!--                        <div class="weixing-sanjiao-big"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="go-top"><a href="javascript:;" title="返回顶部"></a> </div>-->
+<!--                <div style="clear:both"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <script>
+        $(function(){
+            $('#close_im').bind('click',function(){
+                $('#main-im').css("height","0");
+                $('#im_main').hide();
+                $('#open_im').show();
+            });
+            $('#open_im').bind('click',function(e){
+                $('#main-im').css("height","272");
+                $('#im_main').show();
+                $(this).hide();
+            });
+            $('.go-top').bind('click',function(){
+                $(window).scrollTop(0);
+            });
+            $(".weixing-container").bind('mouseenter',function(){
+                $('.weixing-show').show();
+            })
+            $(".weixing-container").bind('mouseleave',function(){
+                $('.weixing-show').hide();
+            });
+        });
+    </script>
+</body>
+</html>
