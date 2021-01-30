@@ -38,11 +38,11 @@ $(function(){
         $(".news_box ul").animate({"top":-180*i})
     })
 
-    $(".left_nav li.cur").find("img").attr("src","/Public/home/images/jian.png");
+    $(".left_nav li.cur").find("img").attr("src","/images/jian.png");
     $(".left_nav li").click(function(){
         $(".left_nav li").removeClass("cur");
         $(this).addClass("cur");
-        $(".left_nav li").find("img").attr("src","/Public/home/images/plus.png");
-        $(".left_nav li.cur").find("img").attr("src","/Public/home/images/jian.png");
+        $(".left_nav li").find("img").attr("src","/images/plus.png");
+        $(".left_nav li.cur").find("img").attr("src","/images/jian.png");
     })
 })
