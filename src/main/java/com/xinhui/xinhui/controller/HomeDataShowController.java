@@ -40,4 +40,64 @@ public class HomeDataShowController {
         return "contact";
     }
 
+    @GetMapping("/one")
+    public String getOneData(){
+        return "one";
+    }
+
+    @GetMapping("/two")
+    public String getTwoData(){
+        return "two";
+    }
+
+    @GetMapping("/three")
+    public String getThreeData(){
+        return "three";
+    }
+
+    @GetMapping("/four")
+    public String getFourData(){
+        return "four";
+    }
+
+    @GetMapping("/five")
+    public String getFiveData(){
+        return "five";
+    }
+
+    @GetMapping("/six")
+    public String getSixData(){
+        return "six";
+    }
+
+    @GetMapping("/seven")
+    public String getSevenData(){
+        return "seven";
+    }
+
+    @GetMapping("/eight")
+    public String getEightData(){
+        return "eight";
+    }
+
+    @GetMapping("/mortar")
+    public String getMortarData(){
+        return "mortar";
+    }
+
+    @GetMapping("/mixture")
+    public String getMixtureData(){
+        return "mixture";
+    }
+
+    @GetMapping("/material")
+    public String getMaterialData(){
+        return "material";
+    }
+
+    @GetMapping("/mechanized")
+    public String getMechanizedData(){
+        return "mechanized";
+    }
+
 }
