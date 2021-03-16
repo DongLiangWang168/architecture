@@ -24,11 +24,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-        <!-- 修改jar方式为war方式启动 start -->
+        <!-- 一 修改jar方式启动 start -->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->
 <!--            <artifactId>spring-boot-starter-web</artifactId>-->
 <!--        </dependency>-->
+        <!-- 修改jar方式启动 end -->
+
+        <!-- 二 修改jar方式为war方式启动 start -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -40,14 +43,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-
         <!-- 修改jar方式为war方式启动 end -->
         <dependency>
             <groupId>mysql</groupId>
@@ -72,6 +73,7 @@
     </dependencies>
 
     <build>
+        <finalName>xinhui</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
